@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 72px;
+}
+.navlist {
+  background-color: rgb(90, 85, 85);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.navlist a {
+  font-weight: 700;
+  font-size: 25px;
+  float: left;
+  color: orange;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 7px 9px;
+}
+.navlist-right {
+  float: right;
+  margin: 0px 20px;
+}
+
+.navlist a:hover {
+  color: #333;
+  background-color: orange;
+}
+.brands {
+  margin-left: 20px;
+}
+
+.jumbotron {
+  background: url(/img/jumbatron.png);
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  color: #000;
+  -webkit-text-stroke: 1px white;
+}
+.center h1 {
+  font-size: 4.5em;
+}
+
+.jumbo-desk {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.container {
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.box {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.deskripsi {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.kartu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 2rem;
+  gap: 1rem;
+  margin-top: 60px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 15.8rem;
+  overflow: hidden;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+.card:hover {
+  transform: scale(1.08);
+  background: linear-gradient(to left, #ffd194, #d1913c);
+}
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+}
+
+.tag + .tag {
+  margin-left: 0.5em;
+}
+
+.tag-blue {
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #d1913c;
+  background: linear-gradient(to bottom, #ffd194, #d1913c);
+  color: #fafafa;
+  font-size: 14px;
+}
+.tag-brown:hover {
+  background: linear-gradient(to bottom, #333, #000);
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 140px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 230px 230px;
+  }
+  .menu {
+    margin-top: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .jumbotron {
+    margin-top: 70px;
+  }
+  .navlist-right {
+    float: none;
+    margin: 0;
+  }
+  .navlist a {
+    float: none;
+    display: list-item;
+    font-size: 16px;
+    padding: 2px;
+  }
+}
+@media (max-width: 480px) {
+  .center h1 {
+    font-size: 3rem;
+  }
+  .container {
+    grid-template-columns: 220px;
+    width: auto;
+  }
+  .menu {
+    margin-top: 800px;
+  }
+  .jumbo-desk {
+    font-size: 16px;
+  }
+}
+@media (max-width: 260px) {
+  .center h1 {
+    font-size: 2rem;
+  }
+}
