@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
 }
 
+/* Header Style Start */
 .header {
   height: 72px;
 }
@@ -28,19 +29,24 @@
   border-radius: 8px;
   margin: 7px 9px;
 }
-.navlist-right {
-  float: right;
-  margin: 0px 20px;
-}
 
 .navlist a:hover {
   color: #333;
   background-color: orange;
 }
-.brands {
+
+.navlist-right {
+  float: right;
+  margin: 0px 20px;
+}
+
+.navlist-left {
   margin-left: 20px;
 }
 
+/* Header Style End */
+
+/* Jumbotron Style Start */
 .jumbotron {
   background: url(/img/jumbatron.png);
   width: 100%;
@@ -64,6 +70,14 @@
   font-size: 30px;
   text-transform: uppercase;
 }
+/* Jumbotron Style End */
+
+/* About Style Start */
+.title-about {
+  text-align: center;
+  margin-top: 30px;
+}
+
 .container {
   margin: 30px auto;
   justify-content: center;
@@ -86,24 +100,21 @@
   justify-content: center;
   font-family: sans-serif;
 }
-.deskripsi {
+/* About Style End */
+
+/* Card Style Start */
+.title-card {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 140px;
 }
 
-.kartu {
+.container-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-block: 2rem;
   gap: 1rem;
   margin-top: 60px;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
 }
 
 .card {
@@ -120,7 +131,14 @@ img {
   transform: scale(1.08);
   background: linear-gradient(to left, #ffd194, #d1913c);
 }
-.card__body {
+
+.card_header img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card_body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -134,12 +152,6 @@ img {
   font-size: 0.75rem;
 }
 
-.tag-blue {
-  background: #56ccf2;
-  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
-  color: #fafafa;
-}
-
 .tag-brown {
   background: #d1913c;
   background: linear-gradient(to bottom, #ffd194, #d1913c);
@@ -150,21 +162,12 @@ img {
   background: linear-gradient(to bottom, #333, #000);
 }
 
-.tag-red {
-  background: #cb2d3e;
-  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-  color: #fafafa;
-}
-
-.card__body h4 {
+.card_body h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
 
-.menu {
-  text-align: center;
-  margin-top: 140px;
-}
+/* Card Style End */
 
 @media (max-width: 768px) {
   .container {
