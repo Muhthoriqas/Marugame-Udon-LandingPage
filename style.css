@@ -134,10 +134,6 @@ img {
   font-size: 0.75rem;
 }
 
-.tag + .tag {
-  margin-left: 0.5em;
-}
-
 .tag-blue {
   background: #56ccf2;
   background: linear-gradient(to bottom, #2f80ed, #56ccf2);
