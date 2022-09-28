@@ -12,7 +12,7 @@
   height: 72px;
 }
 .navlist {
-  background-color: rgb(90, 85, 85);
+  background-color: #495057;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -22,7 +22,7 @@
   font-weight: 700;
   font-size: 25px;
   float: left;
-  color: orange;
+  color: #fca311;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -32,7 +32,7 @@
 
 .navlist a:hover {
   color: #333;
-  background-color: orange;
+  background-color: #fca311;
 }
 
 .navlist-right {
@@ -60,7 +60,7 @@
   display: flex;
   height: 100%;
   color: #000;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #fff;
 }
 .center h1 {
   font-size: 4.5em;
@@ -118,13 +118,13 @@
 }
 
 .card {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   width: 15.8rem;
   overflow: hidden;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
-  background: #ece9e6;
   background: linear-gradient(to right, #ffffff, #ece9e6);
 }
 .card:hover {
@@ -162,21 +162,18 @@
   background: linear-gradient(to bottom, #333, #000);
 }
 
-.card_body h4 {
+.card_body h4 a {
+  color: #000;
+  text-decoration: none;
   font-size: 1.5rem;
   text-transform: capitalize;
+}
+.card_body h4 a:hover {
+  color: #fff;
 }
 
 /* Card Style End */
 
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 230px 230px;
-  }
-  .menu {
-    margin-top: 300px;
-  }
-}
 @media (max-width: 768px) {
   .jumbotron {
     margin-top: 70px;
@@ -190,6 +187,15 @@
     display: list-item;
     font-size: 16px;
     padding: 2px;
+  }
+  .container {
+    grid-template-columns: 230px 230px;
+  }
+  .menu {
+    margin-top: 300px;
+  }
+  .title-card {
+    margin-top: 290px;
   }
 }
 @media (max-width: 486px) {
@@ -206,9 +212,45 @@
   .jumbo-desk {
     font-size: 16px;
   }
+  .title-card {
+    margin-top: 800px;
+    font-size: 28px;
+  }
+  .title-about {
+    font-size: 28px;
+  }
 }
 @media (max-width: 260px) {
   .center h1 {
-    font-size: 2rem;
+    font-size: 22px;
+  }
+  .jumbo-desk {
+    font-size: 14px;
+  }
+  .container {
+    grid-template-columns: 140px;
+  }
+  .title-about {
+    font-size: 22px;
+  }
+  .title-card {
+    margin-top: 600px;
+    font-size: 22px;
+  }
+  .box {
+    font-size: 10px;
+  }
+  .card {
+    width: 10em;
+  }
+  .card_body {
+    font-size: 10px;
+  }
+  .card_body h4 a {
+    font-size: 13px;
+  }
+
+  .tag-brown {
+    font-size: 9px;
   }
 }
